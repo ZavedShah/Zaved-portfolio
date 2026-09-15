@@ -3,7 +3,30 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zaved Shah</title>
-<style>
+<style>.hero{
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+padding:30px;
+border-radius:20px;
+box-shadow:0 8px 30px rgba(0,0,0,.35);
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+padding:18px;
+border-radius:18px;
+margin:18px 0;
+border:1px solid rgba(255,255,255,.15);
+}
+
+.fade{
+animation:fade 1s ease;
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(20px)}
+to{opacity:1;transform:translateY(0)}
+}
 body{
 margin:0;
 font-family:Arial,sans-serif;
@@ -46,7 +69,12 @@ font-weight:bold;
 </head>
 <body>
 
-<div class="box">
+<div class="box fade">
+  <div class="hero">
+    <img src="profile.png" alt="Zaved Shah">
+    <h1>Zaved Shah</h1>
+    <p>Student • FEA Certified • Future Doctor</p>
+  </div>
 
 <img src="file_000000002a5c8211bfddf84cfc34234e.png" alt="Zaved Shah">
 
