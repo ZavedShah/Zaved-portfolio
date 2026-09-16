@@ -1,162 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Zaved Shah</title>
-<style>.hero{
-background:linear-gradient(135deg,#2563eb,#7c3aed);
-padding:30px;
-border-radius:20px;
-box-shadow:0 8px 30px rgba(0,0,0,.35);
-}
-
-.card{
-background:rgba(255,255,255,.08);
-backdrop-filter:blur(12px);
-padding:18px;
-border-radius:18px;
-margin:18px 0;
-border:1px solid rgba(255,255,255,.15);
-}
-
-.fade{
-animation:fade 1s ease;
-}
-
-@keyframes fade{
-from{opacity:0;transform:translateY(20px)}
-to{opacity:1;transform:translateY(0)}
-}
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#0f172a;
-color:white;
-text-align:center;
-}
-.box{
-max-width:420px;
-margin:auto;
-padding:24px;
-}
-img{
-width:130px;
-height:130px;
-border-radius:50%;
-border:3px solid #38bdf8;
-object-fit:cover;
-}
-h1{margin:12px 0 5px;}
-p{color:#cbd5e1;}
-.skill{
-display:inline-block;
-background:#1e293b;
-padding:8px 12px;
-margin:5px;
-border-radius:20px;
-}
-.btn{
-display:block;
-background:#38bdf8;
-color:black;
-padding:12px;
-margin:12px 0;
-border-radius:12px;
-text-decoration:none;
-font-weight:bold;
-}
+<style>
+body{margin:0;background:#0f172a;color:#fff;font-family:Arial}
+.box{max-width:420px;margin:auto;padding:20px}
+.hero{background:linear-gradient(135deg,#2563eb,#7c3aed);padding:25px;border-radius:20px;text-align:center}
+.card{background:#1e293b;padding:16px;border-radius:16px;margin:16px 0}
+img{width:120px;height:120px;border-radius:50%;border:3px solid #fff;object-fit:cover}
+.skill{display:inline-block;background:#334155;padding:8px 12px;margin:5px;border-radius:20px}
+.btn{display:block;background:#38bdf8;color:#000;text-decoration:none;padding:12px;border-radius:12px;margin-top:10px;font-weight:bold}
+#typing{color:#38bdf8;text-align:center}
 </style>
 </head>
 <body>
+<div class="box">
 
-<div class="box fade">
-  <div class="hero">
-    <img src="profile.png" alt="Zaved Shah">
-    <h1>Zaved Shah</h1>
-    <p>Student • FEA Certified • Future Doctor</p>
-  </div>
-
-<img src="file_000000002a5c8211bfddf84cfc34234e.png" alt="Zaved Shah">
-
+<div class="hero">
+<img src="profile.png">
 <h1>Zaved Shah</h1>
-<p>Student • English Learner • Python Beginner</p>
-
-<h2>About Me</h2>
-<p>I'm from Bahraich, Uttar Pradesh. I love English, Python and Digital Marketing.</p>
-
-<h2>Skills</h2>
-<span class="skill">English</span>
-<span class="skill">Python</span>
-<span class="skill">Marketing</span>
-
-<h2>My Projects</h2>
-<p>Learning English • skills devoloper • future enterpreneur</p>
-
-<a class="btn" href="https://instagram.com/zavedsh">Instagram</a>
-
-<a class="btn" href="mailto:shahbealam00123@gmail.com">Email Me</a>
-
+<p>Student • FEA Certified • Future Doctor</p>
 </div>
 
-<h2>📂 Experience</h2>
-<p>FEA Training Program (1 Year)</p>
+<div class="card">
+<h2>About Me</h2>
+<p>I'm from Bahraich, Uttar Pradesh. I love English, Python, AI and Digital Marketing.</p>
+</div>
 
-<h2>📜 Certificates</h2>
-<div class="skill">FEA Certified</div>
-<div class="skill">English Communication</div>
+<div class="card">
+<h2>🏆 FEA Certified</h2>
+<p>Freedom Employability Academy</p>
 <div class="skill">Basic Computer</div>
+<div class="skill">AI</div>
+<div class="skill">Graphics Design</div>
+<div class="skill">Copywriting</div>
+<div class="skill">English Speaking</div>
+<div class="skill">Communication Skills</div>
+</div>
 
-<h2>🎯 Career Goal</h2>
-<p>To become a doctor and help people through healthcare, technology, and education.</p>
+<div class="card">
+<h2>🚀 Projects</h2>
+<p>Portfolio Website • Python Journey • Digital Marketing</p>
+</div>
 
-<hr>
-<p style="color:#94a3b8;font-size:14px;">
-© 2026 Zaved Shah • All Rights Reserved
-</p><h2>🏅 Achievements</h2>
-<p>• FEA Certified (1 Year)</p>
-<p>• English Communication Skills</p>
-<p>• Basic Computer & AI</p>
+<div class="card">
+<h2>🌍 Connect</h2>
+<a class="btn" href="https://instagram.com/zavedsh">Instagram</a>
+<a class="btn" href="mailto:shahbealam00123@gmail.com">Email Me</a><div class="card">
+  <h2>🌍 Connect</h2>
 
-<h2>🌍 Connect With Me</h2>
-<a class="btn" href="https://instagram.com/sahildev543">📷 Instagram</a>
-<a class="btn" href="mailto:shahbealam00123@gmail.com">✉️ Email</a>
+  <a class="btn" href="https://instagram.com/zavedsh">Instagram</a>
+
+  <a class="btn" href="mailto:shahbealam00123@gmail.com">Email Me</a>
+
+  <a class="btn" href="resume.pdf">📄 Download Resume</a>
+</div>
+</div>
 
 <h2 id="typing"></h2>
 
-<script>
-const text="Never Stop Learning.";
-let i=0;
-function type(){
- if(i<text.length){
-  document.getElementById("typing").innerHTML+=text.charAt(i);
-  i++;
-  setTimeout(type,100);
- }
-}
-type();
-</script><h2>🚀 Featured Projects</h2>
-
-<div class="skill">🌐 Portfolio Website</div>
-<div class="skill">🐍 Python Journey</div>
-<div class="skill">📈 Digital Marketing</div>
-
-<h2>📊 My Stats</h2>
-
-<div style="display:flex;justify-content:space-around;gap:10px;flex-wrap:wrap;">
-  <div style="background:#1e293b;padding:15px;border-radius:12px;min-width:90px;">
-    <h3>6+</h3>
-    <p style="font-size:12px;">Skills</p>
-  </div>
-  <div style="background:#1e293b;padding:15px;border-radius:12px;min-width:90px;">
-    <h3>1 Yr</h3>
-    <p style="font-size:12px;">FEA</p>
-  </div>
-  <div style="background:#1e293b;padding:15px;border-radius:12px;min-width:90px;">
-    <h3>100%</h3>
-    <p style="font-size:12px;">Learning</p>
-  </div>
 </div>
 
-<h2>💬 Let's Connect</h2>
-<p>📍 Bahraich, Uttar Pradesh</p></body>
+<script>
+let t="Never Stop Learning.";
+let i=0;
+function type(){
+if(i<t.length){
+document.getElementById("typing").innerHTML+=t.charAt(i);
+i++;
+setTimeout(type,90);
+}}
+type();
+</script>
+</body>
 </html>
