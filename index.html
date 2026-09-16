@@ -3,7 +3,12 @@
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Zaved Shah</title>
-<style>
+<style>.light{
+  background:#f8fafc;
+  color:#0f172a;
+}
+.light .card{background:#ffffff;}
+.light .skill{background:#e2e8f0;}
 body{margin:0;background:#0f172a;color:#fff;font-family:Arial}
 .box{max-width:420px;margin:auto;padding:20px}
 .hero{background:linear-gradient(135deg,#2563eb,#7c3aed);padding:25px;border-radius:20px;text-align:center}
@@ -16,7 +21,9 @@ img{width:120px;height:120px;border-radius:50%;border:3px solid #fff;object-fit:
 </head>
 <body>
 <div class="box">
-
+<button class="btn" onclick="toggleMode()">
+  🌙 / ☀️ Mode
+</button>
 <div class="hero">
 <img src="file_000000002a5c8211bfddf84cfc34234e.png">
 <h1>Zaved Shah</h1>
@@ -72,6 +79,8 @@ i++;
 setTimeout(type,90);
 }}
 type();
-</script>
+</script>function toggleMode(){
+  document.body.classList.toggle("light");
+}
 </body>
 </html>
