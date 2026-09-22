@@ -5,7 +5,8 @@
 <title>Zaved Shah</title>
 html{
   scroll-behavior:smooth;
-}<style>nav{
+}<style>.bar{background:#334155;border-radius:10px;height:10px}
+.fill{background:#38bdf8;height:100%;border-radius:10px}nav{
 position:sticky;top:0;
 background:#111827;
 padding:12px;
@@ -32,7 +33,14 @@ img{width:120px;height:120px;border-radius:50%;border:3px solid #fff;object-fit:
 .skill{display:inline-block;background:#334155;padding:8px 12px;margin:5px;border-radius:20px}
 .btn{display:block;background:#38bdf8;color:#000;text-decoration:none;padding:12px;border-radius:12px;margin-top:10px;font-weight:bold}
 #typing{color:#38bdf8;text-align:center}
-</style>
+.input{
+width:100%;
+padding:12px;
+margin:8px 0;
+border:none;
+border-radius:10px;
+box-sizing:border-box;
+  }</style>
 </head>
 <body><nav>
   <a href="#home">Home</a>
@@ -54,7 +62,14 @@ img{width:120px;height:120px;border-radius:50%;border:3px solid #fff;object-fit:
 <img src="https://hitwebcounter.com/counter/counter.php?page=YOUR_ID&style=0006&nbdigits=6&type=page&initCount=0" alt="Visitors"></div>
 
 <div class="card">
-<h2>About Me</h2>
+<h2>About Me</h2><p>English</p>
+<div class="bar"><div class="fill" style="width:80%"></div></div>
+
+<p>Python</p>
+<div class="bar"><div class="fill" style="width:45%"></div></div>
+
+<p>AI & Graphics</p>
+<div class="bar"><div class="fill" style="width:70%"></div></div>
 <p>I'm from Bahraich, Uttar Pradesh. I love English, Python, AI and Digital Marketing.</p>
 </div>
 
@@ -78,7 +93,13 @@ img{width:120px;height:120px;border-radius:50%;border:3px solid #fff;object-fit:
 <h2>🌍 Connect</h2>
 <a class="btn" href="https://instagram.com/zavedsh">Instagram</a>
 <a class="btn" href="mailto:shahbealam00123@gmail.com">Email Me</a><div class="card">
-<a class="btn" href="https://github.com/yourusername">💻 GitHub</a>
+<a class="btn" href="https://github.com/yourusername">💻 GitHub</a><h3>Send Message</h3>
+
+<input type="text" placeholder="Your Name" class="input">
+<input type="email" placeholder="Your Email" class="input">
+<textarea placeholder="Your Message" class="input"></textarea>
+
+<button class="btn" onclick="alert('Thank you!')">Send</button>
   
 
   <a class="btn" href="Zaved_Shah_Resume.pdf">📄 Download Resume</a>
