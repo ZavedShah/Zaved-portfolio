@@ -124,7 +124,20 @@ document.getElementById("typing").innerHTML+=t.charAt(i);
 i++;
 setTimeout(type,90);
 }}
-type();
+type();const roles=[
+"FEA Certified",
+"Python Learner",
+"Future Doctor",
+"AI & Graphics Designer"
+];
+
+let r=0;
+setInterval(()=>{
+document.getElementById("role").innerHTML=roles[r];
+r=(r+1)%roles.length;
+},2000);
+
+document.getElementById("role").innerHTML=roles[0];
 </script>function toggleMode(){
   document.body.classList.toggle("light");
 }
