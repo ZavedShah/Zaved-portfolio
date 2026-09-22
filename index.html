@@ -40,9 +40,21 @@ margin:8px 0;
 border:none;
 border-radius:10px;
 box-sizing:border-box;
-  }</style>
+  }#topBtn{
+position:fixed;
+bottom:20px;
+right:20px;
+display:none;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:#38bdf8;
+color:#000;
+font-size:22px;
+}</style>
 </head>
-<body><nav>
+<button id="topBtn" onclick="topFunction()">↑</button><body><nav>
   <a href="#home">Home</a>
   <a href="#about">About</a>
   <a href="#fea">FEA</a>
@@ -140,6 +152,12 @@ r=(r+1)%roles.length;
 document.getElementById("role").innerHTML=roles[0];
 </script>function toggleMode(){
   document.body.classList.toggle("light");
+}window.onscroll=function(){
+topBtn.style.display=
+window.scrollY>200?"block":"none";
+}
+function topFunction(){
+window.scrollTo({top:0,behavior:"smooth"});
 }
 </body>
 </html>
